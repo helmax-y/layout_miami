@@ -14,7 +14,9 @@ a {
     display: -ms-flexbox;
     display: flex;
     position: absolute;
-    left: calc(50% - 57.5px); }
+    left: 50%;
+    -webkit-transform: translate(-57.5px, 0);
+            transform: translate(-57.5px, 0); }
   .header__item {
     margin-left: 82px;
     color: white;
@@ -202,6 +204,8 @@ a {
     font-size: 14px;
     text-transform: uppercase;
     color: white;
+    border: none;
+    outline: none;
     background-color: #00aaef;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s; }
@@ -306,6 +310,8 @@ a {
     color: white;
     text-align: center;
     text-transform: uppercase;
+    border: none;
+    outline: none;
     background-color: #00aaef;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s; }
@@ -434,7 +440,9 @@ a {
 
 .footer__logo {
   position: absolute;
-  left: calc(50% - 57.5px);
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
   bottom: 95px; }
 
 html {
